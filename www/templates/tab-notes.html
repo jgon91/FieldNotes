@@ -1,4 +1,4 @@
-<ion-view view-title="Your Notes">
+<ion-view view-title="Field Notes">
     <ion-nav-buttons side="left">
         <a class="button button-icon ion-ios-information-outline" nav-transition="ios" ui-sref="notes-about"></a>
     </ion-nav-buttons>
@@ -19,7 +19,7 @@
                 <i class="icon ion-ios-paper-outline"></i>
                 <small>{{note.body | cut:true:20:' ...'}}</small>
                 <span class="item-note">
-                        {{note.modified_date | date}}
+                        {{note.modified_date | date:"medium"}}
                     </span>
                 <i class="icon ion-chevron-right icon-accessory"></i>
             </ion-item>
